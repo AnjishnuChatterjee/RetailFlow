@@ -102,6 +102,17 @@ with col4:
 # -----------------------------
 # Dataset Preview
 # -----------------------------
+
+st.subheader("Dataset Preview")
+st.dataframe(filtered_df.head(10))
+
+st.download_button(
+    label="📥 Download Sales Data",
+    data=filtered_df.to_csv(index=False),
+    file_name="filtered_sales_data.csv",
+    mime="text/csv"
+)
+
 st.divider()
 st.sidebar.title("RetailPulse")
 
@@ -204,3 +215,24 @@ st.subheader("Current Filters")
 st.write(f"Country: **{selected_country}**")
 
 st.write(f"Date Range: **{start_date} → {end_date}**")
+
+st.divider()
+
+st.header("About RetailPulse")
+
+st.write("""
+RetailPulse is an AI-powered analytics platform that helps retailers:
+
+- Analyze customer purchasing behavior
+- Forecast future demand
+- Predict customer churn
+- Optimize inventory
+- Visualize business performance
+
+Built using:
+- Python
+- Pandas
+- Scikit-learn
+- Prophet
+- Streamlit
+""")

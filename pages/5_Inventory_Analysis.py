@@ -6,9 +6,32 @@ st.set_page_config(page_title="Inventory Analysis", layout="wide")
 
 st.title("📦 Inventory Analysis")
 
+
 inventory = pd.read_csv("data/processed/inventory_analysis.csv")
 
+col1, col2 = st.columns(2)
+
+with col1:
+    st.metric(
+        "Products",
+        len(inventory)
+    )
+
+with col2:
+    st.metric(
+        "High Demand Products",
+        len(
+            inventory[
+                inventory["InventoryStatus"] == "High Demand"
+            ]
+        )
+    )
+
+
+st.subheader("Inventory Data")
+
 st.dataframe(inventory.head())
+
 
 top = inventory.sort_values(
     "TotalRevenue",
