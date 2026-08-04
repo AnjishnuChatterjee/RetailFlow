@@ -6,7 +6,7 @@ import plotly.express as px
 # Page Configuration
 # -----------------------------
 st.set_page_config(
-    page_title="RetailPulse Dashboard",
+    page_title="RetailFlow Dashboard",
     page_icon="📊",
     layout="wide"
 )
@@ -60,10 +60,10 @@ filtered_df = filtered_df[
 # -----------------------------
 # Dashboard Title
 # -----------------------------
-st.title("📊 RetailPulse Dashboard")
+st.title("📊 RetailFlow Dashboard")
 
 st.markdown("""
-Welcome to the **RetailPulse AI-Powered Customer Analytics & Demand Forecasting Platform**.
+Welcome to the **RetailFlow AI-Powered Customer Analytics & Demand Forecasting Platform**.
 
 Use the navigation menu on the left to explore:
 
@@ -114,12 +114,12 @@ st.download_button(
 )
 
 st.divider()
-st.sidebar.title("RetailPulse")
+st.sidebar.title("RetailFlow")
 
 st.sidebar.success("Navigation")
 
 st.sidebar.write("""
-Welcome to RetailPulse Dashboard.
+Welcome to RetailFlow Dashboard.
 Use the sidebar to navigate through analytics.
 """)
 st.subheader("Dataset Preview")
@@ -218,10 +218,10 @@ st.write(f"Date Range: **{start_date} → {end_date}**")
 
 st.divider()
 
-st.header("About RetailPulse")
+st.header("About RetailFlow")
 
 st.write("""
-RetailPulse is an AI-powered analytics platform that helps retailers:
+RetailFlow is an AI-powered analytics platform that helps retailers:
 
 - Analyze customer purchasing behavior
 - Forecast future demand

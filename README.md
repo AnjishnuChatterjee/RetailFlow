@@ -1,4 +1,4 @@
-# RetailPulse
+# RetailFlow
 
 AI-Powered Customer Analytics & Demand Forecasting Platform
 
