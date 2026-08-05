@@ -114,18 +114,6 @@ st.download_button(
 )
 
 st.divider()
-st.sidebar.title("RetailFlow")
-
-st.sidebar.success("Navigation")
-
-st.sidebar.write("""
-Welcome to RetailFlow Dashboard.
-Use the sidebar to navigate through analytics.
-""")
-st.subheader("Dataset Preview")
-st.dataframe(filtered_df.head(10))
-
-st.divider()
 
 st.subheader("📈 Monthly Revenue Trend")
 
