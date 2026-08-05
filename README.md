@@ -31,6 +31,8 @@ streamlit run app.py
 
 https://retailflow.streamlit.app/
 
+---
+
 # Dashboard Preview
 
 ## 🏠 Home Dashboard
